@@ -6,7 +6,7 @@ services:
     env_file:
       - database.env
     volumes:
-      - /Users/dennisshushack/Documents/Blockchain/ChainLink/data:/var/lib/postgresql/data
+      - /Users/dennisshushack/Documents/GitHub/BlockchainApp/ChainLink/data:/var/lib/postgresql/data
   
   chainlink:
     depends_on:
@@ -17,7 +17,7 @@ services:
     ports:
       - "6688:6688"
     volumes:
-      - /Users/dennisshushack/Documents/Blockchain/ChainLink/chainlink-volume:/chainlink
+      - /Users/dennisshushack/Documents/GitHub/BlockchainApp/ChainLink/chainlink-volume:/chainlink
     command: node start --password /chainlink/password.txt --api /chainlink/apicrendentials.txt 
   
 
