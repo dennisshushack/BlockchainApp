@@ -25,4 +25,4 @@ import "@chainlink/contracts/src/v0.6/Oracle.sol";
 ```
 4. Deploy the contract with the given Link Token Contract Address (0x48120Eb14AB6EBe2C4F937c3c4915ae1DaF96736). Use injected Provider of MetaMask.
 5. When deployed go to the ChainLink node frontend and grab the key of the node -> Settings -> Key Management -> EVM Chain Accounts -> Copy the address.
-6. Go back to your deployed contract on Metamask and go to setFullfillmentPermissions and add nodekey, true i.e `0x62A78B6C989678Ba393662810176Cb4a7F96D951, true'
+6. Go back to your deployed contract on Metamask and go to setFullfillmentPermissions and add nodekey, true i.e `0x62A78B6C989678Ba393662810176Cb4a7F96D951, true
