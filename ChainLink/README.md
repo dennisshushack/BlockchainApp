@@ -1,5 +1,8 @@
 # ChainLink Node 
 
+## Prerequisites:
+Create a folder called data, if it is not created yet
+
 ## How to run a node:
 1. Install docker 
 2. Run `docker compose up`
