@@ -16,5 +16,11 @@
 https://docs.chain.link/chainlink-nodes/v1/fulfilling-requests/
 
 ## Deploy Operator Contract:
-1. Go to https://remix.ethereum.org/#url=https://docs.chain.link/samples/ChainlinkNodes/Operator.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js
-2. Deploy the contract with the given Link Token Contract Address (0x48120Eb14AB6EBe2C4F937c3c4915ae1DaF96736). Use injected Provider of MetaMask.
+1. Go to https://remix.ethereum.org/
+2. Create the following contract:
+```Solidity
+// SPDX-License-Identifier: MIT
+pragma solidity 0.6.6;
+import "@chainlink/contracts/src/v0.6/Oracle.sol";
+```
+4. Deploy the contract with the given Link Token Contract Address (0x48120Eb14AB6EBe2C4F937c3c4915ae1DaF96736). Use injected Provider of MetaMask.
