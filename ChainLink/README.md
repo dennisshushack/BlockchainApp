@@ -15,7 +15,8 @@
 6. Follow the instructions on how to run jobs on the Chainlink website:
 https://docs.chain.link/chainlink-nodes/v1/fulfilling-requests/
 
-## Deploy Operator Contract:
+## Deploy Oracle Contract:
+This contract will receive the information from the node and forward it to your contract.
 1. Go to https://remix.ethereum.org/
 2. Create the following contract:
 ```Solidity
@@ -29,6 +30,7 @@ import "@chainlink/contracts/src/v0.6/Oracle.sol";
 7. Save the Oracle contract address i.e. 0xA67d3d9e86E932D29217dB73Fb269c753748aF31
 
 ## Setting up a ChainLink Job:
+Chainlink nodes require jobs to do anything useful. For example, posting asset price data on-chain requires jobs. Chainlink nodes support the following job types. In this example we will deploy one, that can get a specific unit256
 1. Go to the Node frontend -> Jobs -> New Jobs
 1. Take the following code and change the YOUR_OPERATOR_CONTRACT_ADDRESS with your deployed Oracle.sol contract address. Save this as a new job.
 ```
