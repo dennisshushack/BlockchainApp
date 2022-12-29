@@ -14,3 +14,7 @@
 5. Add Link and Ethereum to the node
 6. Follow the instructions on how to run jobs on the Chainlink website:
 https://docs.chain.link/chainlink-nodes/v1/fulfilling-requests/
+
+## Deploy Operator Contract:
+1. Go to https://remix.ethereum.org/#url=https://docs.chain.link/samples/ChainlinkNodes/Operator.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js
+2. Deploy the contract with the given Link Token Contract Address (0x48120Eb14AB6EBe2C4F937c3c4915ae1DaF96736)
