@@ -1,0 +1,25 @@
+services:
+  pg_chainlink:
+    image: "postgres"
+    ports:
+      - "5432:5432"
+    env_file:
+      - database.env
+    volumes:
+      - /Users/dennisshushack/Documents/Blockchain/ChainLink/data:/var/lib/postgresql/data
+  
+  chainlink:
+    depends_on:
+      - pg_chainlink
+    image: "smartcontract/chainlink:1.3.0"
+    env_file:
+      - .env
+    ports:
+      - "6688:6688"
+    volumes:
+      - /Users/dennisshushack/Documents/Blockchain/ChainLink/chainlink-volume:/chainlink
+    command: node start --password /chainlink/password.txt --api /chainlink/apicrendentials.txt 
+  
+
+
+  
